@@ -10,8 +10,12 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
- 
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '21'
+
       - name: Build Image
         run: ./gradlew bootBuildImage --imageName=junkmen0927/devopsttest:${{github.run_number}}
  
