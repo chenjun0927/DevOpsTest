@@ -23,7 +23,7 @@ jobs:
         uses: docker/login-action@v1.8.0
         with:
           username: junkmen0927
-          password: Cn19900927
+          password: dckr_pat_kISXJOJ0HYl5_09aauIPSJunHEw
  
       - name: Push Image
         run: docker push junkmen0927/devopsttest:${{github.run_number}}
