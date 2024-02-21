@@ -12,8 +12,9 @@ spec:
     metadata:
       labels:
         app: devopstest
+    spec:
       containers:
-        - image: junkmen0927/devopstest:1
+        - image: junkmen0927/devopstest:9
           name: devopstest
           ports:
             - containerPort: 9000
