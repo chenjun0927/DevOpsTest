@@ -13,7 +13,7 @@ spec:
       labels:
         app: devopsttest
       containers:
-        - image: junkmen0927/devopsttest:3
+        - image: junkmen0927/devopsttest:6
           name: devopsttest
           ports:
             - containerPort: 9000
