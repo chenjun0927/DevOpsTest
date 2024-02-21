@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devopsttest
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: devopsttest
+  template:
+    metadata:
+      labels:
+        app: devopsttest
+      containers:
+        - image: junkmen0927/devopsttest:3
+          name: guestbook-ui
+          ports:
+            - containerPort: 80
