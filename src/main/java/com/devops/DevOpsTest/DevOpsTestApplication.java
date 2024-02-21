@@ -12,22 +12,5 @@ public class DevOpsTestApplication {
 
     }
 
-    private void check() {
-        var count = 1;
-        if (count > 1) {
-            return;
-        }
 
-        count++;
-
-        ////////
-
-
-        var count = 1;
-        if (count > 1) {
-            return;
-        } else {
-            count++;
-        }
-    }
 }
